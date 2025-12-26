@@ -1,3 +1,4 @@
+# Auto-annotated: imports requests
 import requests
 
 url="https://uploads8.wikiart.org/images/claude-monet/view-at-rouelles-le-havre.jpg" #圖片網址

@@ -1,15 +1,28 @@
+# Auto-annotated: from selenium import webdriver
 from selenium import webdriver
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions   #20230623新增
+# Auto-annotated: from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime, timedelta
+# Auto-annotated: imports time
 import time
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: from PIL import Image
 from PIL import Image
+# Auto-annotated: imports matplotlib.pyplot
 import matplotlib.pyplot as plt
+# Auto-annotated: from wordcloud import WordCloud, ImageColorGenerator
 from wordcloud import WordCloud, ImageColorGenerator
+# Auto-annotated: imports jieba
 import jieba
+# Auto-annotated: imports numpy
 import numpy as np
+# Auto-annotated: from collections import Counter
 from collections import Counter
+# Auto-annotated: from selenium.webdriver.common.by import By
 from selenium.webdriver.common.by import By
 
 chrome_options = ChromeOptions()

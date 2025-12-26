@@ -1,5 +1,8 @@
+# Auto-annotated: imports yfinance
 import yfinance as yf   
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: imports matplotlib.pyplot
 import matplotlib.pyplot as plt
 
 #print(type(yf.Ticker))

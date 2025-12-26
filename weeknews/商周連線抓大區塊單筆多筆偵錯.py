@@ -9,17 +9,29 @@ pip3 install matplotlib
 pip3 install numpy
 並將chromedriver與程式碼放在同一個資料夾中
 '''
+# Auto-annotated: from selenium import webdriver
 from selenium import webdriver
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions   #20230623新增
+# Auto-annotated: from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime, timedelta
+# Auto-annotated: imports time
 import time
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: from PIL import Image
 from PIL import Image
+# Auto-annotated: imports matplotlib.pyplot
 import matplotlib.pyplot as plt
+# Auto-annotated: from wordcloud import WordCloud, ImageColorGenerator
 from wordcloud import WordCloud, ImageColorGenerator
+# Auto-annotated: imports jieba
 import jieba
+# Auto-annotated: imports numpy
 import numpy as np
+# Auto-annotated: from collections import Counter
 from collections import Counter
 
 #20230623 selenium4 改版後呼叫方式
@@ -39,7 +51,9 @@ area=bigarea.find_all("figure")
 print(area[0])
 
 total=0
+# Auto-annotated: for i in area
 for i in area:
+# Auto-annotated: try/except/finally block
     try:
         title1=i.find_all("a")[1].text #標題
         author1=i.find("span",class_="Article-author d-xs-none d-sm-inline").text #撰文者
@@ -54,6 +68,7 @@ for i in area:
         total=total+1
     except:
         print("error")
+# Auto-annotated: if total >= 10
     if total>=10: #顯示10筆
         break
 print("總筆數:",total)

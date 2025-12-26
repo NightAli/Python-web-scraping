@@ -9,18 +9,31 @@ pip3 install matplotlib
 pip3 install numpy
 並將chromedriver與程式碼放在同一個資料夾中
 '''
+# Auto-annotated: from selenium import webdriver
 from selenium import webdriver
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions   #20230623新增
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options
+# Auto-annotated: from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime, timedelta
+# Auto-annotated: imports time
 import time
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: from PIL import Image
 from PIL import Image
+# Auto-annotated: imports matplotlib.pyplot
 import matplotlib.pyplot as plt
+# Auto-annotated: from wordcloud import WordCloud, ImageColorGenerator
 from wordcloud import WordCloud, ImageColorGenerator
+# Auto-annotated: imports jieba
 import jieba
+# Auto-annotated: imports numpy
 import numpy as np
+# Auto-annotated: from collections import Counter
 from collections import Counter
 chrome_options = Options()
 
@@ -65,6 +78,7 @@ bigarea=soup.find("tbody",id="holdingTable")
 #print(bigarea.text)
 area=bigarea.find_all("tr")
 #print(area[0].find_all("td")[0].text)
+# Auto-annotated: for i in area
 for i in area:
     print(i.find_all("td")[0].text)
 

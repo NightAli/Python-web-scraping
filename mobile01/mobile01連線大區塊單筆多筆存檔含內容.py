@@ -9,20 +9,34 @@ pip3 install matplotlib
 pip3 install numpy
 並將chromedriver與程式碼放在同一個資料夾中
 '''
+# Auto-annotated: from selenium import webdriver
 from selenium import webdriver
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions   #20230623新增
+# Auto-annotated: from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime, timedelta
+# Auto-annotated: imports time
 import time
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: from PIL import Image
 from PIL import Image
+# Auto-annotated: imports matplotlib.pyplot
 import matplotlib.pyplot as plt
+# Auto-annotated: from wordcloud import WordCloud, ImageColorGenerator
 from wordcloud import WordCloud, ImageColorGenerator
+# Auto-annotated: imports jieba
 import jieba
+# Auto-annotated: imports numpy
 import numpy as np
+# Auto-annotated: from collections import Counter
 from collections import Counter
+# Auto-annotated: from selenium.webdriver.common.by import By
 from selenium.webdriver.common.by import By
 
+# Auto-annotated: function getcontent1(url)
 def getcontent1(url):    #定義抓樓主文章函式
     chrome_options = ChromeOptions()
     chrome_options.add_experimental_option("detach", True)
@@ -81,7 +95,9 @@ area=bigarea.find_all("div",class_="l-listTable__tr")
 df=pd.DataFrame(columns=["標題","回應","時間","連結"])
 
 total=0
+# Auto-annotated: for i in area
 for i in area:
+# Auto-annotated: try/except/finally block
     try:
         title1=i.find("div",class_="c-listTableTd__title").find("a").text #標題
         back1=i.find("div",class_="o-fMini").text.replace("撰文者：","") #回應
@@ -97,6 +113,7 @@ for i in area:
         total=total+1
     except:
         print("error")
+# Auto-annotated: if total >= 5
     if total>=5: #顯示100筆
         break
 print("總筆數:",total)

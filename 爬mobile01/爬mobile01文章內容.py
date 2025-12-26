@@ -1,18 +1,34 @@
+# Auto-annotated: from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.keys import Keys
+# Auto-annotated: from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver import DesiredCapabilities
+# Auto-annotated: from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoSuchElementException
+# Auto-annotated: from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.wait import WebDriverWait
+# Auto-annotated: from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support import expected_conditions as EC
+# Auto-annotated: from selenium.webdriver.common.by import By
 from selenium.webdriver.common.by import By
+# Auto-annotated: from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.action_chains import ActionChains
+# Auto-annotated: from selenium import webdriver
 from selenium import webdriver
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions  #2023
+# Auto-annotated: from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import Select
+# Auto-annotated: from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime, timedelta
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: imports xlsxwriter
 import xlsxwriter
+# Auto-annotated: imports time
 import time
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime,timedelta
 
 #設定瀏覽器驅動程式與爬蟲網址
@@ -26,11 +42,13 @@ time.sleep(5)
 last_height=browser.execute_script("return document.body.scrollHeight") #目前視窗高度
 print("舊視窗高度:",last_height)
 b1=3 #紀錄按下"顯示更多"倒數次數
+# Auto-annotated: while
 while True:
     browser.execute_script("window.scrollTo(0,document.body.scrollHeight*0.8);") #捲動視窗方法2
     time.sleep(3)
     new_height=browser.execute_script("return document.body.scrollHeight") #目前視窗高度
     print("新視窗高度:",new_height)   
+# Auto-annotated: if new_height == last_height
     if new_height==last_height:
         print("捲到底了")
         break

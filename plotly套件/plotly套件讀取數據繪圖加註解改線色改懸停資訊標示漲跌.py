@@ -1,6 +1,10 @@
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: imports numpy
 import numpy as np
+# Auto-annotated: imports plotly_express
 import plotly_express as px
+# Auto-annotated: imports plotly.graph_objects
 import plotly.graph_objects as go
 
 
@@ -13,8 +17,10 @@ print(df.columns)  # 顯示所有欄位名稱
 
 hovertext=[] #添加懸停資訊
 
+# Auto-annotated: for i in range(len(df['AAPL.Open']))
 for i in range(len(df['AAPL.Open'])):
     ud1="跌"
+# Auto-annotated: if df['AAPL.Close'][i] - df['AAPL.Open'][i] > 0
     if df['AAPL.Close'][i]-df['AAPL.Open'][i]>0:
         ud1="漲"
     hovertext.append('開盤:'+str(df['AAPL.Open'][i])+'<br>'+'收盤:'+str(df['AAPL.Close'][i])+'<br>'+'最高:'+str(df['AAPL.High'][i])+'<br>'+'最低:'+str(df['AAPL.Low'][i])+'<br>'+ud1)
@@ -51,5 +57,6 @@ fig.update_layout(
 
 
 fig.write_html("futures_chart.html")
+# Auto-annotated: imports webbrowser
 import webbrowser
 webbrowser.open("futures_chart.html")

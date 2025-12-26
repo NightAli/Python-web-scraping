@@ -1,4 +1,6 @@
+# Auto-annotated: imports plotly.graph_objects
 import plotly.graph_objects as go
+# Auto-annotated: imports pandas
 import pandas as pd
 
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')

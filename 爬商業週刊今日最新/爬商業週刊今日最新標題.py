@@ -1,10 +1,18 @@
+# Auto-annotated: from selenium import webdriver
 from selenium import webdriver
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions  #2023改版
+# Auto-annotated: from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime, timedelta
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: imports xlsxwriter
 import xlsxwriter
+# Auto-annotated: imports time
 import time
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime,timedelta
 
 #設定瀏覽器驅動程式與爬蟲網址

@@ -1,19 +1,36 @@
+# Auto-annotated: from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.keys import Keys
+# Auto-annotated: from selenium.webdriver import DesiredCapabilities
 from selenium.webdriver import DesiredCapabilities
+# Auto-annotated: from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoSuchElementException
+# Auto-annotated: from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.wait import WebDriverWait
+# Auto-annotated: from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support import expected_conditions as EC
+# Auto-annotated: from selenium.webdriver.common.by import By
 from selenium.webdriver.common.by import By
+# Auto-annotated: from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.action_chains import ActionChains
+# Auto-annotated: from selenium import webdriver
 from selenium import webdriver
+# Auto-annotated: from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions  #2023
+# Auto-annotated: from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import Select
+# Auto-annotated: from bs4 import BeautifulSoup
 from bs4 import BeautifulSoup
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime, timedelta
+# Auto-annotated: imports pandas
 import pandas as pd
+# Auto-annotated: imports xlsxwriter
 import xlsxwriter
+# Auto-annotated: imports time
 import time
+# Auto-annotated: from datetime import datetime, timedelta
 from datetime import datetime,timedelta
+# Auto-annotated: imports requests
 import requests
 
 
@@ -38,6 +55,7 @@ area1=soup.find_all("li",class_="painting-list-text-row")
 
 
 #爬細節
+# Auto-annotated: for i in range(0, len(area1), 1)
 for i in range(0,len(area1),1):
     name1=area1[i].find("a").text
     year1=area1[i].find("span").text.replace(", ","")
@@ -51,6 +69,7 @@ for i in range(0,len(area1),1):
     imgbox1=soup2.find("div",class_="wiki-layout-artist-image-wrapper btn-overlay-wrapper-artwork ng-scope")    #抓圖片區塊
     imglink1=imglink1=imgbox1.find("img").get('src') #同imgbox1.find("img")['src']
 
+# Auto-annotated: if i > 10
     if i>10:break
     
     print("作品名稱:",name1)
