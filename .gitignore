@@ -1,4 +1,15 @@
-# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+.env
+chromedriver*
+venv/
+.vscode/
+*.sqlite3
+*.db
+.DS_Store
+*.log
+/*.egg-info/
+node_modules/# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
