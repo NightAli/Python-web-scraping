@@ -1,5 +1,8 @@
+# 註解（自動）：匯入 yfinance
 import yfinance as yf   
+# 註解（自動）：匯入 pandas
 import pandas as pd
+# 註解（自動）：匯入 matplotlib.pyplot
 import matplotlib.pyplot as plt
 
 #print(type(yf.Ticker))

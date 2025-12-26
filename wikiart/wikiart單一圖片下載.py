@@ -1,3 +1,4 @@
+# 註解（自動）：匯入 requests
 import requests
 
 url="https://uploads8.wikiart.org/images/claude-monet/view-at-rouelles-le-havre.jpg" #圖片網址

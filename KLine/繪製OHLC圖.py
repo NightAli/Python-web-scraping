@@ -1,4 +1,6 @@
+# 註解（自動）：匯入 plotly.graph_objects
 import plotly.graph_objects as go
+# 註解（自動）：匯入 pandas
 import pandas as pd
 
 df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')

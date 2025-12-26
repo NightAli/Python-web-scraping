@@ -1,5 +1,8 @@
+# 註解（自動）：匯入 matplotlib.pyplot
 import matplotlib.pyplot as plt
+# 註解（自動）：匯入 yfinance
 import yfinance as yf
+# 註解（自動）：匯入 numpy
 import numpy as np
 
 # 使用中文字體
@@ -11,6 +14,7 @@ ohlcv = yf.Ticker(stock_id).history(period='max')
 x = ohlcv.tail(120).index.astype(str)
 y = ohlcv.tail(120)
 
+# 註解（自動）：函式 ma(n)
 def ma(n):
     return ohlcv.Close.rolling(n).mean().tail(120)
 
@@ -19,6 +23,7 @@ fig,ax = plt.subplots(figsize=(23,8),dpi=80,facecolor='#414343')
 ax.set_facecolor('#414343')
 ax.bar(x,y.Close-y.Open*0.9995,0.6,y.Open,color=['#e27980' if x>0 else '#73d9b6' for x in y.Close-y.Open])
 ax.vlines(x,y.Low,y.High,color=['#e27980' if x>0 else '#73d9b6' for x in y.Close-y.Open])
+# 註解（自動）：對 (n, color)  在 zip([5, 20, 60, 120], ['#6b90e4', '#fae239', '#93d557', '#aa57d5']) 中迭代
 for n,color in zip([5,20,60,120],['#6b90e4','#fae239','#93d557','#aa57d5']):
     ax.plot(x,ma(n),color=color,label=f"ma{n}")
 

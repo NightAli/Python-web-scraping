@@ -1,5 +1,7 @@
 # 如何生成一個datetime時間對象
+# 註解（自動）：匯入 plotly.graph_objects
 import plotly.graph_objects as go
+# 註解（自動）：從 datetime 匯入 datetime
 from datetime import datetime
 
 datetime(year=2013, month=10, day=10) 
