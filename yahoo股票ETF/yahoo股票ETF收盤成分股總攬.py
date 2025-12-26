@@ -1,8 +1,8 @@
-# Auto-annotated: imports yfinance
+# 註解（自動）：匯入 yfinance
 import yfinance as yf   
-# Auto-annotated: imports pandas
+# 註解（自動）：匯入 pandas
 import pandas as pd
-# Auto-annotated: imports matplotlib.pyplot
+# 註解（自動）：匯入 matplotlib.pyplot
 import matplotlib.pyplot as plt
 
 

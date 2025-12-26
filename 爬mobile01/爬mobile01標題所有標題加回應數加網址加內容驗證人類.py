@@ -1,34 +1,34 @@
-# Auto-annotated: from selenium.webdriver.common.keys import Keys
+# 註解（自動）：從 selenium.webdriver.common.keys 匯入 Keys
 from selenium.webdriver.common.keys import Keys
-# Auto-annotated: from selenium.webdriver import DesiredCapabilities
+# 註解（自動）：從 selenium.webdriver 匯入 DesiredCapabilities
 from selenium.webdriver import DesiredCapabilities
-# Auto-annotated: from selenium.common.exceptions import NoSuchElementException
+# 註解（自動）：從 selenium.common.exceptions 匯入 NoSuchElementException
 from selenium.common.exceptions import NoSuchElementException
-# Auto-annotated: from selenium.webdriver.support.wait import WebDriverWait
+# 註解（自動）：從 selenium.webdriver.support.wait 匯入 WebDriverWait
 from selenium.webdriver.support.wait import WebDriverWait
-# Auto-annotated: from selenium.webdriver.support import expected_conditions
+# 註解（自動）：從 selenium.webdriver.support 匯入 expected_conditions
 from selenium.webdriver.support import expected_conditions as EC
-# Auto-annotated: from selenium.webdriver.common.by import By
+# 註解（自動）：從 selenium.webdriver.common.by 匯入 By
 from selenium.webdriver.common.by import By
-# Auto-annotated: from selenium.webdriver.common.action_chains import ActionChains
+# 註解（自動）：從 selenium.webdriver.common.action_chains 匯入 ActionChains
 from selenium.webdriver.common.action_chains import ActionChains
-# Auto-annotated: from selenium import webdriver
+# 註解（自動）：從 selenium 匯入 webdriver
 from selenium import webdriver
-# Auto-annotated: from selenium.webdriver.chrome.options import Options
+# 註解（自動）：從 selenium.webdriver.chrome.options 匯入 Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions  #2023
-# Auto-annotated: from selenium.webdriver.support.ui import Select
+# 註解（自動）：從 selenium.webdriver.support.ui 匯入 Select
 from selenium.webdriver.support.ui import Select
-# Auto-annotated: from bs4 import BeautifulSoup
+# 註解（自動）：從 bs4 匯入 BeautifulSoup
 from bs4 import BeautifulSoup
-# Auto-annotated: from datetime import datetime, timedelta
+# 註解（自動）：從 datetime 匯入 datetime, timedelta
 from datetime import datetime, timedelta
-# Auto-annotated: imports pandas
+# 註解（自動）：匯入 pandas
 import pandas as pd
-# Auto-annotated: imports xlsxwriter
+# 註解（自動）：匯入 xlsxwriter
 import xlsxwriter
-# Auto-annotated: imports time
+# 註解（自動）：匯入 time
 import time
-# Auto-annotated: from datetime import datetime, timedelta
+# 註解（自動）：從 datetime 匯入 datetime, timedelta
 from datetime import datetime,timedelta
 
 #設定瀏覽器驅動程式與爬蟲網址
@@ -42,7 +42,7 @@ time.sleep(5)
 last_height=browser.execute_script("return document.body.scrollHeight") #目前視窗高度
 print("舊視窗高度:",last_height)
 b1=3 #紀錄按下"顯示更多"倒數次數
-# Auto-annotated: while
+# 註解（自動）：當條件成立時重複執行
 while True:
     browser.execute_script("window.scrollTo(0,document.body.scrollHeight*0.8);") #捲動視窗方法2
     time.sleep(3)
@@ -51,7 +51,7 @@ while True:
     
    
     
-# Auto-annotated: if new_height == last_height
+# 註解（自動）：若 new_height == last_height
     if new_height==last_height:
         print("捲到底了")
         break
@@ -64,7 +64,7 @@ while True:
 html_source=browser.page_source  #取得網頁原始碼
 soup=BeautifulSoup(html_source,"lxml")
 area1=soup.find_all("div",class_="l-listTable__tr")
-# Auto-annotated: for i in range(1, len(area1), 1)
+# 註解（自動）：對 i  在 range(1, len(area1), 1) 中迭代
 for i in range(1,len(area1),1):
     title=area1[i].find("div",class_="c-listTableTd__title")
     title2=title.find("a")
@@ -76,10 +76,10 @@ for i in range(1,len(area1),1):
     browser2=webdriver.Chrome(options=chrome_options)
     browser2.get(link1)
     time.sleep(3)
-# Auto-annotated: try/except/finally block
+# 註解（自動）：嘗試區塊（try/except/finally）
     try:
         elem=browser.find_element(By.XPATH, "/html/body/div/div/div[1]/div/label/input") #抓驗證人類,方法二
-# Auto-annotated: if elem
+# 註解（自動）：若 elem
         if elem:
             elem.click()
             print("驗證人類...")

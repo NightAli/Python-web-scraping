@@ -1,28 +1,28 @@
-# Auto-annotated: from selenium import webdriver
+# 註解（自動）：從 selenium 匯入 webdriver
 from selenium import webdriver
-# Auto-annotated: from selenium.webdriver.chrome.options import Options
+# 註解（自動）：從 selenium.webdriver.chrome.options 匯入 Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions   #20230623新增
-# Auto-annotated: from bs4 import BeautifulSoup
+# 註解（自動）：從 bs4 匯入 BeautifulSoup
 from bs4 import BeautifulSoup
-# Auto-annotated: from datetime import datetime, timedelta
+# 註解（自動）：從 datetime 匯入 datetime, timedelta
 from datetime import datetime, timedelta
-# Auto-annotated: imports time
+# 註解（自動）：匯入 time
 import time
-# Auto-annotated: imports pandas
+# 註解（自動）：匯入 pandas
 import pandas as pd
-# Auto-annotated: from PIL import Image
+# 註解（自動）：從 PIL 匯入 Image
 from PIL import Image
-# Auto-annotated: imports matplotlib.pyplot
+# 註解（自動）：匯入 matplotlib.pyplot
 import matplotlib.pyplot as plt
-# Auto-annotated: from wordcloud import WordCloud, ImageColorGenerator
+# 註解（自動）：從 wordcloud 匯入 WordCloud, ImageColorGenerator
 from wordcloud import WordCloud, ImageColorGenerator
-# Auto-annotated: imports jieba
+# 註解（自動）：匯入 jieba
 import jieba
-# Auto-annotated: imports numpy
+# 註解（自動）：匯入 numpy
 import numpy as np
-# Auto-annotated: from collections import Counter
+# 註解（自動）：從 collections 匯入 Counter
 from collections import Counter
-# Auto-annotated: from selenium.webdriver.common.by import By
+# 註解（自動）：從 selenium.webdriver.common.by 匯入 By
 from selenium.webdriver.common.by import By
 
 chrome_options = ChromeOptions()

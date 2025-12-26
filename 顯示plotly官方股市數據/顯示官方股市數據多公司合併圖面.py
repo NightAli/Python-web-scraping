@@ -1,10 +1,10 @@
-# Auto-annotated: imports pandas
+# 註解（自動）：匯入 pandas
 import pandas as pd
-# Auto-annotated: imports numpy
+# 註解（自動）：匯入 numpy
 import numpy as np
-# Auto-annotated: imports plotly_express
+# 註解（自動）：匯入 plotly_express
 import plotly_express as px
-# Auto-annotated: imports plotly.graph_objects
+# 註解（自動）：匯入 plotly.graph_objects
 import plotly.graph_objects as go
 
 stocks = px.data.stocks()

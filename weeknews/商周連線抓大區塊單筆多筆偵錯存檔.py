@@ -9,29 +9,29 @@ pip3 install matplotlib
 pip3 install numpy
 並將chromedriver與程式碼放在同一個資料夾中
 '''
-# Auto-annotated: from selenium import webdriver
+# 註解（自動）：從 selenium 匯入 webdriver
 from selenium import webdriver
-# Auto-annotated: from selenium.webdriver.chrome.options import Options
+# 註解（自動）：從 selenium.webdriver.chrome.options 匯入 Options
 from selenium.webdriver.chrome.options import Options as ChromeOptions   #20230623新增
-# Auto-annotated: from bs4 import BeautifulSoup
+# 註解（自動）：從 bs4 匯入 BeautifulSoup
 from bs4 import BeautifulSoup
-# Auto-annotated: from datetime import datetime, timedelta
+# 註解（自動）：從 datetime 匯入 datetime, timedelta
 from datetime import datetime, timedelta
-# Auto-annotated: imports time
+# 註解（自動）：匯入 time
 import time
-# Auto-annotated: imports pandas
+# 註解（自動）：匯入 pandas
 import pandas as pd
-# Auto-annotated: from PIL import Image
+# 註解（自動）：從 PIL 匯入 Image
 from PIL import Image
-# Auto-annotated: imports matplotlib.pyplot
+# 註解（自動）：匯入 matplotlib.pyplot
 import matplotlib.pyplot as plt
-# Auto-annotated: from wordcloud import WordCloud, ImageColorGenerator
+# 註解（自動）：從 wordcloud 匯入 WordCloud, ImageColorGenerator
 from wordcloud import WordCloud, ImageColorGenerator
-# Auto-annotated: imports jieba
+# 註解（自動）：匯入 jieba
 import jieba
-# Auto-annotated: imports numpy
+# 註解（自動）：匯入 numpy
 import numpy as np
-# Auto-annotated: from collections import Counter
+# 註解（自動）：從 collections 匯入 Counter
 from collections import Counter
 
 #20230623 selenium4 改版後呼叫方式
@@ -54,9 +54,9 @@ print(area[0])
 df=pd.DataFrame(columns=["標題","撰文","時間","連結"])
 
 total=0
-# Auto-annotated: for i in area
+# 註解（自動）：對 i  在 area 中迭代
 for i in area:
-# Auto-annotated: try/except/finally block
+# 註解（自動）：嘗試區塊（try/except/finally）
     try:
         title1=i.find_all("a")[1].text #標題
         author1=i.find("span",class_="Article-author d-xs-none d-sm-inline").text #撰文者
@@ -71,7 +71,7 @@ for i in area:
         total=total+1
     except:
         print("error")
-# Auto-annotated: if total >= 10
+# 註解（自動）：若 total >= 10
     if total>=10: #顯示10筆
         break
 print("總筆數:",total)
